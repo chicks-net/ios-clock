@@ -25,10 +25,10 @@
 - (void)doEverySecond {
     
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    [formatter setDateFormat:@"hh:mm:ss"];
+    [formatter setDateFormat:@"HH:mm:ss"];
     self.timeLabel.text = [formatter stringFromDate:[NSDate date]];
     
-    [formatter setDateFormat:@"YYYY-MM-dd"];
+    [formatter setDateFormat:@"EEE, yyyy-MM-dd"];
     self.dateLabel.text = [formatter stringFromDate:[NSDate date]];
 
 }
