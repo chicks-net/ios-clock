@@ -17,7 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    
+    [self doEverySecond];
     everySecond = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(doEverySecond) userInfo:nil repeats:YES];
 }
 
